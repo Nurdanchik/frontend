@@ -161,22 +161,6 @@ const About = () => {
           </div>
           <dl className="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
             <div className="flex flex-col">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-indigo-200">
-                Active Users
-              </dt>
-              <dd className="order-1 text-5xl font-extrabold text-white">100,000+</dd>
-            </div>
-            <div className="flex flex-col mt-10 sm:mt-0">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-indigo-200">
-                Projects Completed
-              </dt>
-              <dd className="order-1 text-5xl font-extrabold text-white">50,000+</dd>
-            </div>
-            <div className="flex flex-col mt-10 sm:mt-0">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-indigo-200">
-                Success Rate
-              </dt>
-              <dd className="order-1 text-5xl font-extrabold text-white">95%</dd>
             </div>
           </dl>
         </div>

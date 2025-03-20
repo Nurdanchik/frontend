@@ -1,4 +1,5 @@
 import { Code2, Layout, Database } from 'lucide-react';
+import {Link} from "react-router-dom";
 
 const Projects = () => {
 
@@ -61,9 +62,11 @@ const Projects = () => {
                 </div>
               </div>
               <p className="text-gray-500 text-sm mb-4">{project.description}</p>
+              <Link to={`/projects/${project.id}`}>
               <button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors duration-200">
-                Start Project
+                  Start Project
               </button>
+              </Link>
             </div>
           </div>
         ))}

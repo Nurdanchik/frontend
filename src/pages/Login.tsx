@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import { Mail, Lock } from 'lucide-react';
 
@@ -7,6 +7,7 @@ const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,6 +21,8 @@ const Login = () => {
         // Сохраняем данные корректно
         localStorage.setItem("username", response.data.username);
         localStorage.setItem("accessToken", response.data.accessToken); // Исправлено
+        localStorage.setItem('login' , true)
+        navigate('/home')
 
         console.log("Saved to localStorage:", {
           username: localStorage.getItem("username"),

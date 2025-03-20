@@ -38,7 +38,7 @@ function AppContent() {
             <AnimatePresence exitBeforeEnter>
               <Routes location={location} key={location.pathname}>
                 <Route
-                  path="/home"
+                  path="/"
                   element={
                     <motion.div initial="out" animate="in" exit="out" variants={pageTransition}>
                       <Home />
